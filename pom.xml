@@ -12,8 +12,12 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Dependencies versions -->
         <testng.version>7.10.2</testng.version>
-        <selenium.version>4.20.0</selenium.version>
+        <selenium.version>4.11.0</selenium.version>
+        <logger.version>2.23.1</logger.version>
+        <extent.report.version>5.1.1</extent.report.version>
     </properties>
 
     <dependencies>
@@ -30,6 +34,20 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- Log4j -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${logger.version}</version>
+        </dependency>
+
+        <!-- Extent Reports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extent.report.version}</version>
         </dependency>
 
     </dependencies>
