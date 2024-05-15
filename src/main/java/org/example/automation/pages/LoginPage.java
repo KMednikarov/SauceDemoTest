@@ -2,11 +2,14 @@ package org.example.automation.pages;
 
 import org.apache.logging.log4j.LogManager;
 import org.example.context.TestContext;
+import org.example.utils.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
+    public static final String URL = Constants.BASE_URL;
+
     private By LoginForm = By.xpath("//*[@id='login_button_container']/div/form");
     private By UserName = By.xpath("//*[@id='user-name']");
     private By Password = By.xpath("//*[@id='password']");

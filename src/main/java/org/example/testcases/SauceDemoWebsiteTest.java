@@ -1,18 +1,19 @@
 package org.example.testcases;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.automation.pages.CartPage;
 import org.example.automation.pages.LoginPage;
+import org.example.automation.validators.CartPageValidator;
 import org.example.automation.validators.LoginPageValidator;
 import org.example.automation.validators.ProductPageValidator;
 import org.example.exceptions.WebDriverNotFoundException;
 import org.example.context.TestContext;
-import org.example.models.InventoryItem;
+import org.example.models.Product;
 import org.example.utils.Constants;
 import org.example.automation.pages.ProductPage;
 import org.example.utils.webdriver.DriverType;
 import org.example.utils.webdriver.WebDriverUtil;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.util.List;
@@ -26,6 +27,8 @@ public class SauceDemoWebsiteTest extends BaseTest{
     private LoginPageValidator loginPageValidator;
     private ProductPageValidator productPageValidator;
     private ProductPage productPage;
+    private CartPage cartPage;
+    private CartPageValidator cartPageValidator;
 
     //////////////////////////////////////
     // Setup
@@ -33,32 +36,36 @@ public class SauceDemoWebsiteTest extends BaseTest{
 
     @BeforeClass
     public void setup(){
-        initializeDriver(DriverType.CHROME_DRIVER);
+        testContext = new TestContext();
+        setupDriver(DriverType.CHROME_DRIVER);
         driver.get(Constants.BASE_URL);
-        initializePages(driver, testContext);
-        initializeValidators();
+        setupPages(driver, testContext);
+        setupValidators();
     }
 
-    private void initializeValidators() {
-        loginPageValidator = new LoginPageValidator(loginPage);
-        productPageValidator = new ProductPageValidator(productPage);
-    }
-
-    private void initializePages(WebDriver driver, TestContext testContext) {
-        loginPage = new LoginPage(driver, testContext);
-        productPage = new ProductPage(driver, testContext);
-    }
-
-    private void initializeDriver(DriverType type) {
+    private void setupDriver(DriverType type) {
         try {
             driver = WebDriverUtil.getWebDriver(type);
         } catch (WebDriverNotFoundException e) {
             LOG.error("Web Driver type not found.");
         }
     }
+
+    private void setupPages(WebDriver driver, TestContext testContext) {
+        loginPage = new LoginPage(driver, testContext);
+        productPage = new ProductPage(driver, testContext);
+        cartPage = new CartPage(driver, testContext);
+    }
+
+    private void setupValidators() {
+        loginPageValidator = new LoginPageValidator(loginPage);
+        productPageValidator = new ProductPageValidator(productPage);
+        cartPageValidator = new CartPageValidator(cartPage);
+    }
+
     @AfterClass
     public void tearDown(){
-        productPage.disconnect();
+        driver.quit();
     }
 
     //////////////////////////////////////
@@ -68,8 +75,7 @@ public class SauceDemoWebsiteTest extends BaseTest{
     @Test(priority = 1, description = "Verify Products page is opened after login")
     public void verifyProductPageOpened(){
         loginPage.login("standard_user", "secret_sauce");
-        String url = loginPage.getCurrentUrl();
-        Assert.assertEquals(url, Constants.PRODUCTS_PAGE);
+        loginPageValidator.validateRedirectingToProductPage();
     }
 
     @Test(priority = 2
@@ -77,15 +83,23 @@ public class SauceDemoWebsiteTest extends BaseTest{
             , dependsOnMethods = "verifyProductPageOpened")
     public void verifyProductsAddedToCart(){
         productPage.addItemsToCart(2);
-        int badgeCount = productPage.getCartBadgeCount();
-        Assert.assertEquals(badgeCount, 2);
+        productPageValidator.validateProductsAddedToCart();
     }
 
     @Test(priority = 3, description = "Verify products are removed from the cart")
     public void verifyProductsRemovedFromCart(){
-        List<InventoryItem> itemsToRemove = productPage.getTestContext().getCart().getCartItems();
+        List<Product> itemsToRemove = productPage.getTestContext().getCart().getCartProducts();
         productPage.removeItemsFromCart(itemsToRemove);
-        int badgeCount = productPage.getCartBadgeCount();
-        Assert.assertEquals(badgeCount, 0);
+        productPageValidator.validateProductsRemovedFromCart();
+    }
+
+    @Test(priority = 4, description = "Verify products exist in cart page")
+    public void verifyCartProducts(){
+        productPage.addItemsToCart(2);
+        productPageValidator.validateProductsAddedToCart();
+        cartPage.navigate();
+        List<Product> cartProducts = cartPage.getCartProducts();
+        List<Product> addedProducts = testContext.getCart().getCartProducts();
+        cartPageValidator.validateCartProducts(cartProducts, addedProducts);
     }
 }

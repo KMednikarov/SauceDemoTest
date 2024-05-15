@@ -18,11 +18,8 @@ public class BasePage {
     protected WebDriver getDriver(){
         return this.driver;
     }
-
-    public void disconnect(){
-        if(driver != null){
-            driver.quit();
-        }
+    protected void navigate(String url){
+        getDriver().get(url);
     }
     public String getCurrentUrl(){
         return driver.getCurrentUrl();
@@ -30,5 +27,11 @@ public class BasePage {
 
     public TestContext getTestContext(){
         return this.testContext;
+    }
+
+    public void disconnect(){
+        if(driver != null){
+            driver.quit();
+        }
     }
 }

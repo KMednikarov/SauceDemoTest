@@ -11,7 +11,7 @@ public class LoginPageValidator {
         this.loginPage = page;
     }
 
-    public void redirectedToProductPageAfterLogin(){
+    public void validateRedirectingToProductPage(){
         String url = loginPage.getCurrentUrl();
         Assert.assertEquals(url, ProductPage.URL);
     }

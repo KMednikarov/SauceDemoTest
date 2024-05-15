@@ -1,18 +1,18 @@
 package org.example.context;
 
 import org.example.models.Cart;
-import org.example.models.InventoryItem;
+import org.example.models.Product;
 
 public class TestContext {
-    private Cart cart = new Cart();
+    private final Cart cart = new Cart();
     private boolean loggedIn = false;
 
-    public void addItemToCart(InventoryItem item){
-        cart.getCartItems().add(item);
+    public void addProductToCart(Product product){
+        cart.getCartProducts().add(product);
     }
 
-    public void removeItemFromCart(InventoryItem item){
-        cart.getCartItems().remove(item);
+    public void removeProductFromCart(Product product){
+        cart.getCartProducts().remove(product);
     }
 
     public Cart getCart() {
