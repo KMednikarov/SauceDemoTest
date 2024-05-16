@@ -24,11 +24,11 @@ public class CartPageValidator {
                 if(!cartProduct.name().contentEquals(addedProduct.name()))
                     continue;
                 productFound = true;
-                Assert.assertEquals(addedProduct.name(), cartProduct.name());
-                Assert.assertEquals(addedProduct.description(), cartProduct.description());
-                Assert.assertEquals(addedProduct.price(), cartProduct.price());
+                Assert.assertEquals(addedProduct.name(), cartProduct.name(), "Product name does not match");
+                Assert.assertEquals(addedProduct.description(), cartProduct.description(), "Product description does not match");
+                Assert.assertEquals(addedProduct.price(), cartProduct.price(), "Product price does not match");
             }
-            sa.assertTrue(productFound);
+            sa.assertTrue(productFound, "Product not found in cart");
         }
 
         sa.assertAll();

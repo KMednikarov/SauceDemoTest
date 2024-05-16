@@ -17,7 +17,7 @@ import java.util.Map;
 public class ExtentReportListener extends ExtentManager implements ITestListener {
 
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getTestName());
+        //test = extent.createTest(result.getTestName());
     }
 
     public void onTestSuccess(ITestResult result) {
@@ -46,7 +46,8 @@ public class ExtentReportListener extends ExtentManager implements ITestListener
     }
 
     public void onStart(ITestContext context) {
-//        test.log(Status.INFO, "Test Execution Started");
+        test = extent.createTest(context.getSuite().getName());
+        test.log(Status.INFO, "Test Execution Started");
     }
 
     public void onFinish(ITestContext context) {

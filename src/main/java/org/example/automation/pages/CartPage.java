@@ -17,6 +17,7 @@ public class CartPage extends BasePage{
     private final By CartItemName = By.xpath(".//div[contains(@data-test,'inventory-item-name')]");
     private final By CartItemDescription = By.xpath(".//div[contains(@data-test,'inventory-item-desc')]");
     private final By CartItemPrice = By.xpath(".//div[contains(@data-test,'inventory-item-price')]");
+    private final By CheckoutButton = By.xpath("//*[@id='checkout']");
 
     public CartPage(WebDriver driver, TestContext testContext) {
         super(driver, testContext, LogManager.getLogger(CartPage.class));
@@ -35,7 +36,11 @@ public class CartPage extends BasePage{
         return products;
     }
 
+    public void checkout(){
+        getDriver().findElement(CheckoutButton).click();
+    }
+
     public void navigate() {
-        super.navigate(CartPage.URL);
+        getDriver().get(URL);
     }
 }

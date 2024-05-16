@@ -1,21 +1,24 @@
 package org.example.testcases;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.example.utils.reports.ExtentManager;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 public class BaseTest {
 
-
     @BeforeSuite
     public void beforeSuite() throws IOException {
-        ExtentManager.setExtent();
+        ExtentManager.createExtentReport();
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun=true)
     public void afterSuite() {
-        ExtentManager.endReport();
+        ExtentManager.saveReport();
     }
 }

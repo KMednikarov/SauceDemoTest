@@ -7,14 +7,18 @@
     <list default="true" id="e78809ae-f6fc-4311-9724-5dd3a55030d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CheckoutOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CheckoutOnePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CartPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CartPageValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CheckoutOnePageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CheckoutOnePageValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/LoginPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/LoginPageValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/ProductPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/ProductPageValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/context/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/context/TestContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/InventoryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reports/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reports/extent-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kaloyan.mednikarov\OneDrive - ADASTRA, s.r.o\Desktop\projects\cerebro\SauceDemoTest\src\main\resources\reports" />
@@ -106,19 +110,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/automation/validators/CartPageValidator.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/automation/pages/ProductPage.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="23" />
+          <line>79</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
