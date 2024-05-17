@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78809ae-f6fc-4311-9724-5dd3a55030d4" name="Changes" comment="" />
+    <list default="true" id="e78809ae-f6fc-4311-9724-5dd3a55030d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CheckoutOnePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/pages/CheckoutOnePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CartPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CartPageValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CheckoutOnePageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/CheckoutOnePageValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/LoginPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/LoginPageValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/ProductPageValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/automation/validators/ProductPageValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/reports/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/reports/extent-config.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -23,12 +46,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaloyan.mednikarov\OneDrive - ADASTRA, s.r.o\Desktop\projects\cerebro\SauceDemoTest\src\main\resources\reports" />
+      <recent name="C:\Users\kaloyan.mednikarov\OneDrive - ADASTRA, s.r.o\Desktop\projects\cerebro\SauceDemoTest\src\main\resources\webdrivers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="SauceDemoTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml" type="TestNG" nameIsGenerated="true">
+      <module name="SauceDemoTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="TestNG.C:/Users/kaloyan.mednikarov/OneDrive - ADASTRA, s.r.o/Desktop/projects/cerebro/SauceDemoTest/src/main/resources/testng-suites/SauceDemoWebsiteTest.xml" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,5 +105,33 @@
       <updated>1715686011003</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/utils/reports/ExtentReportListener.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/testcases/BaseTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/testcases/SauceDemoWebsiteTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
